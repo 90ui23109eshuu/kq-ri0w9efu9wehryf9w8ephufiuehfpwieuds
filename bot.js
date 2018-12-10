@@ -9,21 +9,8 @@ flixz8.on('ready', () => {
     }, 1500);
 });
 
-flixz8.on('message', message => {
-    if(message.author.id !== '488388962201763840') return;
-    var args = message.content.split(' ');
-    var command = message.content.toLowerCase().split(' ')[0];
-    if(command == 'apl') {
-        if(!args[1]) return;
-        flixz8.user.setActivity(args.slice(1).join(' ')).then(() => message.edit('**Done.** :white_check_mark:'));
-    }
-    if(command == 'als') {
-        if(!args[1]) return;
-        flixz8.user.setActivity(args.slice(1).join(' '), {type: "LISTENING"}).then(() => message.edit('**Done.** :white_check_mark:'));
-    }
-    if(command == 'awt') {
-        if(!args[1]) return;
-        flixz8.user.setActivity(args.slice(1).join(' '), {type: "WATCHING"}).then(() => message.edit('**Done.** :white_check_mark:'));
+flixz8.on('ready', () => {
+    setInterval(() => flixz8.channels.get('485710163966296064').send('#daily <@488388962201763840>'), 86403000);
     }
 });
 
