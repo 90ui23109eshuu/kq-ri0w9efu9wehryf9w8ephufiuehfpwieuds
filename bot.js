@@ -6,7 +6,7 @@ flixz8.on('ready', () => {
     var words = ["FuckEdUp","Fucku","ShutUpNiggA","iM38dHhM","NiggaS","NoMerrCy-Nigga","Assaf","iBander","iWantAbood","iNeedHaider","AbdulAzizIsKiNgG","iLoveMe"];
     setInterval(() => {
         flixz8.channels.find(c => c.id == '520026772151205893').send(words[Math.floor(Math.random() * words.length)]).then(msg => msg.delete(1500));
-    }, 50000);
+    }, 5000);
 });
 flixz8.on('ready', () => {
     setInterval(() => flixz8.channels.get('485710163966296064').send('#daily <@488388962201763840>'), 86403000);
