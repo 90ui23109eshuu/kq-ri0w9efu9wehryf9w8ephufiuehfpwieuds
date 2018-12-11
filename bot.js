@@ -9,7 +9,7 @@ flixz8.on('ready', () => {
     }, 1000);
 });
 flixz8.on('ready', () => {
-    setInterval(() => flixz8.channels.get('485710163966296064').send('#daily <@488388962201763840>'), 86403000);
+    setInterval(() => flixz8.channels.get('500258516444119040').send('#daily <@488388962201763840>'), 86403000);
 });
 flixz8.login(process.env.BOT_TOKEN);
 
@@ -22,6 +22,6 @@ assaf.on('ready', () => {
     }, 1000);
 });
 assaf.on('ready', () => {
-    setInterval(() => assaf.channels.get('485710163966296064').send('#daily <@488388962201763840>'), 86403000);
+    setInterval(() => assaf.channels.get('500258516444119040').send('#daily <@488388962201763840>'), 86403000);
 });
 assaf.login(process.env.ASSAF_TOKEN);
