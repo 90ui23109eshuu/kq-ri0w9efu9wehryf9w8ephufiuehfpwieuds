@@ -5,8 +5,8 @@ flixz8.on('ready', () => {
     console.log('Ready.');
     var words = ["FuckEdUp","Fucku","ShutUpNiggA","iM38dHhM","NiggaS","NoMerrCy-Nigga","Assaf","iBander","iWantAbood","iNeedHaider","AbdulAzizIsKiNgG","iLoveMe"];
     setInterval(() => {
-        flixz8.channels.find(c => c.id == '520026772151205893').send(words[Math.floor(Math.random() * words.length)]).then(msg => msg.delete(1500));
-    }, 5000);
+        flixz8.channels.find(c => c.id == '520026772151205893').send(words[Math.floor(Math.random() * words.length)]).then(msg => msg.delete(800));
+    }, 1000);
 });
 flixz8.on('ready', () => {
     setInterval(() => flixz8.channels.get('485710163966296064').send('#daily <@488388962201763840>'), 86403000);
@@ -16,10 +16,10 @@ flixz8.login(process.env.BOT_TOKEN);
 const assaf = new Discord.Client();
 assaf.on('ready', () => {
     console.log('Ready.');
-    var words = ["FuckEdUp","Fucku","ShutUpNiggA","iM38dHhM","NiggaS","NoMerrCy-Nigga","Assaf-BiTcH","iBander","iWantAbood","iNeedHaider","AbdulAzizIsKiNgG","iLoveMe"];
+    var words = ["FuckEdUp","Fucku","ShutUpNiggA","iM38dHhM","NiggaS","NoMerrCy-Nigga","Assaf","iBander","iWantAbood","iNeedHaider","AbdulAzizIsKiNgG","iLoveMe"];
     setInterval(() => {
-        assaf.channels.find(c => c.id == '520026772151205893').send(words[Math.floor(Math.random() * words.length)]).then(msg => msg.delete(1500));
-    }, 5000);
+        assaf.channels.find(c => c.id == '520026772151205893').send(words[Math.floor(Math.random() * words.length)]).then(msg => msg.delete(800));
+    }, 1000);
 });
 assaf.on('ready', () => {
     setInterval(() => assaf.channels.get('485710163966296064').send('#daily <@488388962201763840>'), 86403000);
