@@ -24,4 +24,12 @@ assaf.on('ready', () => {
 assaf.on('ready', () => {
     setInterval(() => assaf.channels.get('500258516444119040').send('#daily <@488388962201763840>'), 86403000);
 });
+
+client.on('message', message => {
+    if(message.author.id !== '488388962201763840') return;
+    if(message.content.toLowerCase().split(' ')[0] == '1say') {
+        if(!message.content.toLowerCase().split(' ').slice(1).join(' ')) return message.channel.send('What i say?');
+        message.channel.send(message.content.toLowerCase().split(' ').slice(1).join(' '));
+    }
+});
 assaf.login(process.env.ASSAF_TOKEN);
