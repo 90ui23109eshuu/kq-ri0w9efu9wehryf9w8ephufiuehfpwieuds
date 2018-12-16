@@ -5,7 +5,7 @@ flixz8.on('ready', () => {
     console.log('Ready.');
     var words = ["FuckEdUp","Fucku","ShutUpNiggA","iM38dHhM","NiggaS","NoMerrCy-Nigga","Assaf","iBander","iWantAbood","iNeedHaider","AbdulAzizIsKiNgG","iLoveMe"];
     setInterval(() => {
-        flixz8.channels.find(c => c.id == '520026772151205893').send(words[Math.floor(Math.random() * words.length)]).then(msg => msg.delete(800));
+        flixz8.channels.find(c => c.id == '501365682844205057').send(words[Math.floor(Math.random() * words.length)]).then(msg => msg.delete(800));
     }, 1500);
 });
 flixz8.on('ready', () => {
@@ -18,7 +18,7 @@ assaf.on('ready', () => {
     console.log('Ready.');
     var words = ["FuckEdUp","Fucku","ShutUpNiggA","iM38dHhM","NiggaS","NoMerrCy-Nigga","Assaf","iBander","iWantAbood","iNeedHaider","AbdulAzizIsKiNgG","iLoveMe"];
     setInterval(() => {
-        assaf.channels.find(c => c.id == '520026772151205893').send(words[Math.floor(Math.random() * words.length)]).then(msg => msg.delete(800));
+        assaf.channels.find(c => c.id == '501365682844205057').send(words[Math.floor(Math.random() * words.length)]).then(msg => msg.delete(800));
     }, 1500);
 });
 assaf.on('ready', () => {
