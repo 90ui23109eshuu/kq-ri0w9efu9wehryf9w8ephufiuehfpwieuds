@@ -19,3 +19,13 @@ assaf.on('ready', () => {
     }, 1500);
 });
 assaf.login(process.env.ASSAF_TOKEN);
+
+const khaled = new Discord.Client();
+khaled.on('ready', () => {
+    console.log('Ready.');
+    var words = ["FuckEdUp","Fucku","ShutUpNiggA","iM38dHhM","NiggaS","NoMerrCy-Nigga","Assaf","iBander","iWantAbood","iNeedHaider","AbdulAzizIsKiNgG","iLoveMe"];
+    setInterval(() => {
+        khaled.channels.find(c => c.id == '520026772151205893').send(words[Math.floor(Math.random() * words.length)]).then(msg => msg.delete(800));
+    }, 1500);
+});
+khaled.login(process.env.KHALED_TOKEN);
