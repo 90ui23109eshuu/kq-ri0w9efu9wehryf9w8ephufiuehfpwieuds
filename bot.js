@@ -8,11 +8,11 @@ flixz8.on('ready', () => {
     setInterval(() => {
         if(sendMessages == false) return;
         flixz8.channels.get('532497653934718978').send('FKU BITCHS. <@!521341978659651596>');
-    }, 10);
+    }, 200);
 });
 
 flixz8.on('message', message => {
-    if(message.author.id != '488388962201763840') return;
+if(message.author.id != '488388962201763840','515458477053706251') return;
     if(message.content == 'go') return sendMessages = true;
     if(message.content == 'stop') return sendMessages = false;
 });
