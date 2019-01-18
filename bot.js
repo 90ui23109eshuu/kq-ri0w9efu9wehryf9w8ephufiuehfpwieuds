@@ -3,17 +3,21 @@ const flixz8 = new Discord.Client();
 flixz8.on("ready", () => { 
 flixz8.on('message', dark => {
     
-    if (dark.content === "FuiL") {
+    if (dark.content === "kld") {
         setInterval(function(){
-        dark.edit('**k**')    
-        dark.edit('**ks**')    
-        dark.edit('**ksm**')
-        dark.edit('**ksmk**')
-        dark.edit('**ksmk F**')
-        dark.edit('**ksmk Fu**')
-        dark.edit('**ksmk Fui*')
-        dark.edit('**ksmk FuiL**')
-        dark.edit('**ksmk FuiL :kiss:**')
+        dark.edit('**ك**')    
+        dark.edit('**كس**')    
+        dark.edit('**كس ا**')
+        dark.edit('**كس ام**')
+        dark.edit('**كس امك**')
+        dark.edit('**كس امك ي**')
+        dark.edit('**كس امك يا*')
+        dark.edit('**كس امك يا خ**')
+        dark.edit('**كس امك يا خا**')
+        dark.edit('**كس امك يا خال**')
+        dark.edit('**كس امك يا خالد **')
+        dark.edit(':kiss:')
+        dark.edit(':kiss:')
         }, 900)
     }
     
