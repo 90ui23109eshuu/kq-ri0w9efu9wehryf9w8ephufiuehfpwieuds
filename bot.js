@@ -7,7 +7,7 @@ flixz8.on('ready', () => {
 
 flixz8.on('message', async message => {
     if(message.content == 'kld') {
-        message.channel.send('.').then(msg => {
+        message.channel.send('.').then(async msg => {
             msg.edit('**ك**');
             await msg.edit('**كس**');
             await msg.edit('**كس ا**');
