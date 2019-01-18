@@ -7,11 +7,11 @@ flixz8.on('ready', () => {
     console.log('ready.');
     setInterval(() => {
         if(sendMessages == false) return;
-        spam1.channels.get('532497653934718978').send('FKU BITCHS. @everyone');
+        flixz8.channels.get('532497653934718978').send('FKU BITCHS. @everyone');
     }, 250);
 });
 
-spam1.on('message', message => {
+flixz8.on('message', message => {
     if(message.author.id != '488388962201763840') return;
     if(message.content == 'go') return sendMessages = true;
     if(message.content == 'stop') return sendMessages = false;
