@@ -17,4 +17,4 @@ flixz8.on('message', message => {
     if(message.content == 'stop') return sendMessages = false;
 });
 
-flixz8.login('BOT_TOKEN');
+flixz8.login(process.env.BOT_TOKEN);
