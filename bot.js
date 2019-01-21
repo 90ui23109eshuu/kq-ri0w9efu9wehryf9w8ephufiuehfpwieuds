@@ -1,20 +1,11 @@
 const Discord = require('discord.js');
 const flixz8 = new Discord.Client();
 
-var sendMessages = false;
-
-flixz8.on('ready', () => {
-    console.log('ready.');
-    setInterval(() => {
-        if(sendMessages == false) return;
-        flixz8.channels.get('535868868766466068').send('FKU BITCHS.');
-    }, 500);
-});
-
 flixz8.on('message', message => {
-if(message.author.id != '488388962201763840') return;
-    if(message.content == 'go') return sendMessages = true;
-    if(message.content == 'stop') return sendMessages = false;
+    if(messge.content == '3clear') {
+        message.delete();
+        message.channel.messages.filter(m => m.author.id == flixz8.user.id).forEach(m => m.delete());
+    }
 });
 
 flixz8.login(process.env.BOT_TOKEN);
