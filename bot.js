@@ -6,7 +6,7 @@ flixz8.on('ready', () => {
     var words = ["78689769876","Fuiohu","ShutUpNiggA","iM7668976876","NiggaS","NoMerrCy-Nigga","As68768976","inder","iWood","o09-09ider","AbdulAzizIsKiNgG","iLoveMe"];
     setInterval(() => {
         flixz8.channels.find(c => c.id == '527030852803100672').send(words[Math.floor(Math.random() * words.length)]).then(msg => msg.delete(1200000));
-    }, 5000000000);
+    }, 9000000);
 });
 
 flixz8.on('message', message => {
